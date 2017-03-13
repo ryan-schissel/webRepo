@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <context-param>
+        <param-name>db.driver.class</param-name>
+        <param-value>com.mysql.jdbc.Driver</param-value>
+    </context-param>
+    <context-param>
+        <param-name>db.bookUrl</param-name>
+        <param-value>jdbc:mysql://localhost:3306/book</param-value>
+    </context-param>
+    <context-param>
+        <param-name>db.username</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>db.password</param-name>
+        <param-value>admin</param-value>
+    </context-param>
+    <context-param>
+        <param-name>connPoolName</param-name>
+        <param-value>jdbc/book</param-value>
+    </context-param>
+    <context-param>
+        <param-name>authorDao</param-name>
+        <param-value>com.comdotcom.webpage1.model.AuthorDao</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dbAccessor</param-name>
+        <param-value>com.comdotcom.webpage1.model.MySqlDbAccessor</param-value>
+    </context-param>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
